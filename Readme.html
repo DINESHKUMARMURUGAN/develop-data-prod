@@ -98,6 +98,12 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <h4>Application URL</h4>
 <p>Application deployed to <a href="https://dineshm.shinyapps.io/develop-data-prod">https://dineshm.shinyapps.io/develop-data-prod</a></p>
 </div>
+<div id="run-app-locally" class="section level4">
+<h4>Run App locally</h4>
+<p>To run the Application locally download both server.r and ui.r to the same folder and run the following commend</p>
+<p>```{r} library(shiny) runApp(appDir = getwd(), port = NULL, launch.browser = getOption(“shiny.launch.browser”, interactive()), host = getOption(“shiny.host”, “127.0.0.1”), workerId = “”, quiet = FALSE, display.mode = c(“auto”, “normal”, “showcase”))</p>
+<p>```</p>
+</div>
 </div>
 
 

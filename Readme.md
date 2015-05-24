@@ -45,3 +45,13 @@ Select he number of cylinders and /or the maximum Horse Power and we shall show 
 ####Application URL
 
 Application deployed to https://dineshm.shinyapps.io/develop-data-prod
+
+####Run App locally
+
+To run the Application locally download both server.r and ui.r to the same folder and run the following commend
+
+```{r}
+library(shiny)
+runApp(appDir = getwd(), port = NULL, launch.browser = getOption("shiny.launch.browser", interactive()), host = getOption("shiny.host", "127.0.0.1"), workerId = "", quiet = FALSE, display.mode = c("auto", "normal", "showcase"))
+
+```
